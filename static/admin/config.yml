@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+#local_backend: true #set this to true if you want to enable local development mode for Netlify CMS. You must have node installed. Start Netlify CMS proxy server with 'npx netlify-cms-proxy-server'. More info on usage here: https://www.netlifycms.org/docs/beta-features/
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categories", name: "categories", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "string", required: false}
+      - { label: "Weight", name: "weight", widget: "number", required: false, default: 0, value_type: "int", min: 0} 
+      - name: cover
+        label: Cover Image
+        widget: object
+        required: false
+        fields:
+          - {name: image, label: Image, widget: image, required: false}
+          - {name: alt, label: Alt text, widget: string, required: false}
+          - {name: caption, label: Caption, widget: string, required: false}
+          - {label: "Hidden", name: "hidden", widget: "boolean", default: false, required: false}
+          - {label: "Relative", name: "relative", widget: "boolean", default: false, required: false}
+      - name: editPost
+        label: Suggest Changes to Post Info
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - {name: URL, label: URL, widget: string , default: "", required: false}
+          - {name: Text, label: Text, widget: string, default: "", required: false}
+          - {name: appendFilePath, label: "Append File Path", widget: boolean, default: false, required: false}
+      - { label: "Show TOC", name: "showToc", widget: "boolean", default: false, required: false}
+      - { label: "TOC Open", name: "TocOpen", widget: "boolean", default: false, required: false}
+      - { label: "Hide Metadata", name: "hidemeta", widget: "boolean", default: false, required: false}
+      - { label: "Enable Comments", name: "comments", widget: "boolean", default: false, required: false}
+      - { label: "Disable Highlight.JS", name: "disableHLJS", widget: "boolean", default: false, required: false}
+      - { label: "Disable Share", name: "disableShare", widget: "boolean", default: false, required: false}
+      - { label: "Hide Summary", name: "hideSummary", widget: "boolean", default: false, required: false}
+      - { label: "searchHidden", name: "searchHidden", widget: "boolean", default: false, required: false}
+      - { label: "ShowReadingTime", name: "ShowReadingTime", widget: "boolean", default: false, required: false}
+      - { label: "ShowBreadCrumbs", name: "ShowBreadCrumbs", widget: "boolean", default: false, required: false}
+      - { label: "ShowPostNavLinks", name: "ShowPostNavLinks", widget: "boolean", default: false, required: false}
+      - { label: "ShowWordCount", name: "ShowWordCount", widget: "boolean", default: false, required: false}
+      - { label: "ShowRssButtonInSectionTermList", name: "ShowRssButtonInSectionTermList", widget: "boolean", default: false, required: false}
+      - { label: "UseHugoToc", name: "UseHugoToc", widget: "boolean", default: false, required: false}
