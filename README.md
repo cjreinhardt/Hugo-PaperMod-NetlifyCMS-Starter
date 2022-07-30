@@ -16,7 +16,7 @@ git clone https://github.com/YourUsername/YourNewRepositoryname.git
 ```
 3. If you don't already have Hugo installed, now's the time to make that happen!  Read the [Hugo install docs here](https://gohugo.io/getting-started/installing/).
 
-4. Once Hugo is installed go to your repository directory on your local machine.  Edit congif.yml in the root directory.  Here you can change alot of the content displayed by Papermod (like the text on the homepage), and also adjust a ton of options.  Check out the  [Papermod docs here for more info](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)).  
+4. Once Hugo is installed go to your repository directory on your local machine.  Edit config.yml in the root directory.  Here you can change alot of the content displayed by Papermod (like the text on the homepage), and also adjust a ton of options.  Check out the  [Papermod docs here for more info](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)).  
 
 5. When you're done editing start Hugo with this command:
 ```
