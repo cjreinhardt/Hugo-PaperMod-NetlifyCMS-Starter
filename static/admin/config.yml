@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: main # Branch to update (optional; defaults to master)
 #local_backend: true #set this to true if you want to enable local development mode for Netlify CMS. You must have node installed. Start Netlify CMS proxy server with 'npx netlify-cms-proxy-server'. More info on usage here: https://www.netlifycms.org/docs/beta-features/
 # This line should *not* be indented
 publish_mode: editorial_workflow
