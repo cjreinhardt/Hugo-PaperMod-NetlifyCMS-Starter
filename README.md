@@ -30,20 +30,22 @@ hugo server -D
 local_backend: true
 ```
 
-8. If you don't have Node installed, you'll need to install it, see their docs here.  Open a new terminal, go to your repository directory and run this command to start NetlifyCMS locally (note that this is a beta feature, see Netlify's [docs on this here](https://www.netlifycms.org/docs/beta-features/)):
+8. If you don't have Node installed, you'll need to install it, [see their docs here](https://nodejs.org/en/download/).  
+
+9. Open a new terminal, go to your repository directory and run this command to start NetlifyCMS locally (note that this is a beta feature, see Netlify's [docs on this here](https://www.netlifycms.org/docs/beta-features/)):
 ```
 npx netlify-cms-proxy-server
 ```
 
-9. If everything has worked you should be able to edit posts in NetlifyCMS by going to /admin. Each post has options for most of Papermod's post variables, 
+10. If everything has worked you should be able to edit posts in NetlifyCMS by going to /admin. Each post has options for most of Papermod's post variables, 
 [read more about them here](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/).  
 
-10. Once you've got your site all setup and posts edited make sure to comment out line 4 of /static/admin.config.yml before you push your changes back to github:
+11. Once you've got your site all setup and posts edited make sure to comment out line 4 of /static/admin.config.yml before you push your changes back to github:
 ```
 #local_backend: true
 ```
 
-11. When you're ready you'll want to add/stage all your changes, commit your changes to your local repository, then push your changes back to your Github repository. You may need to setup a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).  Once you push your changes to Github, Netlify will see that you've updated your repository and push all your changes to your public site. Voila! :tada:
+12. When you're ready you'll want to add/stage all your changes, commit your changes to your local repository, then push your changes back to your Github repository. You may need to setup a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).  Once you push your changes to Github, Netlify will see that you've updated your repository and push all your changes to your public site. Voila! :tada:
 ```
 git add -A
 git commit -m "Add a useful commit message"
