@@ -140,7 +140,7 @@ params:
         Content: >
             Welcome to demo of hugo's theme PaperMod.
 
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX. This starter supports editing posts with NetlifyCMS, login at /admin. Most other configs (including this message!) happen in config.yml in the root directory.
 
             - Do give a 🌟 on Github !
 
