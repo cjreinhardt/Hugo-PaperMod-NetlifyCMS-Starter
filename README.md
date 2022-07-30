@@ -23,27 +23,9 @@ git clone https://github.com/YourUsername/YourNewRepositoryname.git
 hugo server -D
 ```
 
-6. You should now be able to see your site! Hugo will let you know where you can view your site in the terminal (it's usually at localhost:1313)
+6. You should now be able to see your site! Hugo will let you know where you can view your site in the terminal (it's usually at localhost:1313)  
 
-7. If you want, you can run NetlifyCMS locally to edit or add posts (insytead of editing the .md files directly).  Uncomment this line in /static/admin.config.yml:
-```
-local_backend: true
-```
-
-8. If you don't have Node installed, you'll need to install it, [see their docs here](https://nodejs.org/en/download/).  
-
-9. Open a new terminal, go to your repository directory and run this command to start NetlifyCMS locally (note that this is a beta feature, see Netlify's [docs on this here](https://www.netlifycms.org/docs/beta-features/)):
-```
-npx netlify-cms-proxy-server
-```
-
-10. If everything has worked you should be able to edit posts in NetlifyCMS by going to /admin. Each post has options for most of Papermod's post variables, 
-[read more about them here](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/).  
-
-11. Once you've got your site all setup and posts edited make sure to comment out line 4 of /static/admin.config.yml before you push your changes back to github:
-```
-#local_backend: true
-```
+11. Finish getting everything in config.yml setup to your liking.  
 
 12. When you're ready you'll want to add/stage all your changes, commit your changes to your local repository, then push your changes back to your Github repository. You may need to setup a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) or [ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).  Once you push your changes to Github, Netlify will see that you've updated your repository and push all your changes to your public site. Voila! :tada:
 ```
@@ -52,7 +34,7 @@ git commit -m "Add a useful commit message"
 git push origin main
 ```
 
-13. Going forward, you can access NetlifyCMS from /admin. You may need to do additional Netlify Identitiy setup for CMS login to work.  Read more about this [here](https://www.netlifycms.org/docs/add-to-your-site/#authentication). Usually you have to invite yourself as a user from the 'Identity' tab at NEtlfiy, and enable the git-gateway under Identity -> Services.
+13. Going forward, you can access NetlifyCMS from /admin to edit or add posts. You may need to do additional Netlify Identitiy setup for CMS login to work.  Read more about this [here](https://www.netlifycms.org/docs/add-to-your-site/#authentication). Usually you have to invite yourself as a user from the 'Identity' tab at Netlfiy, and enable the git-gateway under Identity -> Services.
 
 ## More Info on Hugo Papermod
 
