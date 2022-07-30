@@ -1,6 +1,6 @@
 # Hugo-PaperMod-NetlifyCMS-Starter
 
-This repository should help you get started with using Hugo and the Papermod theme quickly on Netlify with NetlifyCMS.  It's based on the [hugo-Papermod example site](https://github.com/adityatelange/hugo-PaperMod), with NetlifyCMS support added in the /static/admin directory.  
+This repository should help you get started with using Hugo and the Papermod theme quickly on Netlify, NetlifyCMS and Netlify Identity.  It's based on the [hugo-Papermod example site](https://github.com/adityatelange/hugo-PaperMod), with NetlifyCMS support added in the /static/admin directory.  
 
 ## Install
 
@@ -52,7 +52,7 @@ git commit -m "Add a useful commit message"
 git push origin main
 ```
 
-13. Going forward, you can access NetlifyCMS from /admin. You may need to do additional Netlify Identitiy setup for CMS login to work.  Read more about this [here](https://www.netlifycms.org/docs/add-to-your-site/#authentication).
+13. Going forward, you can access NetlifyCMS from /admin. You may need to do additional Netlify Identitiy setup for CMS login to work.  Read more about this [here](https://www.netlifycms.org/docs/add-to-your-site/#authentication). Usually you have to invite yourself as a user from the 'Identity' tab at NEtlfiy, and enable the git-gateway under Identity -> Services.
 
 ## More Info on Hugo Papermod
 
