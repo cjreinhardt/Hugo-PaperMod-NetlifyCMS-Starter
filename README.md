@@ -52,6 +52,8 @@ git commit -m "Add a useful commit message"
 git push origin main
 ```
 
+13. Going forward, you can access NetlifyCMS from /admin. You may need to do additional Netlify Identitiy setup for CMS login to work.  Read more about this [here](https://www.netlifycms.org/docs/add-to-your-site/#authentication).
+
 ## More Info on Hugo Papermod
 
 Visit the Hugo Papermod Github repo => [hugo-Papermod at Github](https://github.com/adityatelange/hugo-PaperMod)
